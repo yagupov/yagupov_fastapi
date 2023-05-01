@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "yagupov-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Alexander Yagupov <yalegan@gmail.com>"]
+readme = "README.md"
+packages = [{include = "yagupov_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.3.1"
+httpx = "^0.24.0"
+mypy = "^1.2.0"
+pylint = "^2.17.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
