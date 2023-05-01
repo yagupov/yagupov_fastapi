@@ -13,4 +13,4 @@ COPY . /code
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi --without test
 
-CMD ["poetry", "run", "uvicorn", "yagupov_fastapi.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["poetry", "run", "uvicorn", "yagupov_fastapi.main:app", "--host", "62.217.179.36", "--port", "8000"]
