@@ -7,4 +7,4 @@ class Settings(BaseSettings):
     """ Settings class """
     main_url: str
 
-settings = Settings()
+settings = Settings(main_url="/")
